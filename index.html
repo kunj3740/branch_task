@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Started</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 60px 80px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.card h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 36px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1> started </h1>
+    <div class="card">
+        <h1>🚀 Started</h1>
+        <p>Your journey begins here. Build something amazing.</p>
+        <a href="#" class="button">Get Started</a>
+        <a href="#Excited" class="button">Excited</a>
+        <a href="#Not-Excited" class="button">Not Excited</a>
+    </div>
 </body>
 </html>
